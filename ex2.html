@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link rel="stylesheet" href="ex2.css">
+    <title>Countries Info & weather</title>
+</head>
+
+<body>
+    <header>
+        <h3>LEARNING HOW TO WORK WITH APIs</h3>
+        <select class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-xm-12" name="countriesList" id="countries-list">
+            <option value="" disabled selected style="display:none;">Select Your country</option>
+        </select>
+    </header>
+
+    <div class="container">
+        <div class="details outer col-xl-4 col-lg-4 col-md-12 col-sm-12 col-xm-12">
+            <div class="card info ">
+                <h4 class="" id="country-name"></h4>
+                <p class=""><span class="">Native Name: </span><span id="native-name" class=""></span></p>
+                <p class=""><span class="">Capital: </span><span id="capital" class=""></span></p>
+                <p class=""><span class="">Region: </span><span id="region" class=""></span></p>
+                <p class=""><span class="">Population: </span><span id="population" class=""></span></p>
+                <p class=""><span class="">Languages: </span><span id="languages" class=""></span></p>
+                <p class=""><span class="">Timezones: </span><span id="timezones" class=""></span></p>
+            </div>
+        </div>
+
+        <div class="outer col-xl-4 col-lg-4 col-md-12 col-sm-12 col-xm-12">
+            <div class="card code">
+                <h4 class="">Calling Code</h4>
+                <p class="" id="calling-codes"></p>
+            </div>
+        </div>
+
+        <div class="outer col-xl-4 col-lg-4 col-md-12 col-sm-12 col-xm-12">
+            <div class="card flag">
+                <img id="flag" src="" alt="">
+            </div>
+        </div>
+
+        <div class="outer col-xl-4 col-lg-4 col-md-12 col-sm-12 col-xm-12">
+            <div class="card weather">
+                <h4>CAPITAL WEATHER REPORT</h4>
+                <img id="weather-icon" src="" alt="">
+                <div id="temperature">
+                    <p id="weather-status"></p>
+                    <p id="weather-desc"></p>
+                    <p id="temp-max"></p>
+                    <p id="temp-min"></p>
+                </div>
+                <div class="weather-content">
+                    <p class=""><span class="">Humidity: </span><span id="humidity" class=""></span></p>
+                    <p class=""><span class="">Wind Speed: </span><span id="wind-speed" class=""></span></p>
+                    <p class=""><span class="">Visibility: </span><span id="visibility" class=""></span></p>
+                    <p class=""><span class="">Temperature: </span><span id="temperature-m" class=""></span></p>
+                </div>
+            </div>
+        </div>
+        <div class="outer col-xl-4 col-lg-4 col-md-12 col-sm-12 col-xm-12">
+            <div class="ow-widget">
+                <div class="ow-row">
+                    <span class="ow-city-name"></span>
+
+                </div>
+                <div class="ow-row">
+                    <div class="wi ow-ico ow-ico-current pull-left"></div>
+                    <div class="ow-temp-current pull-left"></div>
+                    <div class="ow-current-desc pull-left d-none ">
+                        <div>Pressure: <span class="ow-pressure d-none"></span></div>
+                        <div>Humidity: <span class="ow-humidity d-none"></span></div>
+                        <div>Wind: <span class="ow-wind d-none"></span></div>
+                    </div>
+                </div>
+                <div class="ow-row ow-forecast">
+                    <div class="ow-forecast-item">
+                        <div class="ow-day"></div>
+                        <div class="wi ow-ico ow-ico-forecast"></div>
+                        <div class="ow-forecast-temp">
+                            <span class="max"></span>
+                            <span class="min"></span>
+                        </div>
+                    </div>
+
+                    <div class="ow-forecast-item">
+                        <div class="ow-day"></div>
+                        <div class="wi ow-ico ow-ico-forecast"></div>
+                        <div class="ow-forecast-temp">
+                            <span class="max"></span>
+                            <span class="min"></span>
+                        </div>
+                    </div>
+
+                    <div class="ow-forecast-item">
+                        <div class="ow-day"></div>
+                        <div class="wi ow-ico ow-ico-forecast"></div>
+                        <div class="ow-forecast-temp">
+                            <span class="max"></span>
+                            <span class="min"></span>
+                        </div>
+                    </div>
+
+                    <div class="ow-forecast-item">
+                        <div class="ow-day"></div>
+                        <div class="wi ow-ico ow-ico-forecast"></div>
+                        <div class="ow-forecast-temp">
+                            <span class="max"></span>
+                            <span class="min"></span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            </section>
+
+
+        </div>
+
+
+
+
+        <script src="ex2.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBKotTJhgPhXrCww1huO2yq9pv5EY66FWY&callback=initMap"></script>
+</body>
+
+</html>

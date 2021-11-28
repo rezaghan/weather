@@ -1,0 +1,321 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+header {
+    color: #FFC400;
+    text-align: center;
+    background-color: #212121;
+}
+
+select {
+    border: none;
+    height: 40px;
+    /* margin: 10px; */
+    border-radius: 10px 10px 0 0;
+    width: 600px;
+    padding: 10px;
+    transform: translateY(9px);
+}
+
+option {
+    background-color: rgb(0, 255, 170);
+}
+
+select:focus {
+    outline: none;
+}
+
+.status {
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#temperature {
+    padding: 10px;
+}
+
+#temperature p {
+    line-height: 40px;
+}
+
+img {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+
+.outer {
+    padding: 20px;
+    min-height: 370px;
+}
+
+.card {
+    width: 100%;
+    height: 100%;
+    /* box-shadow: #9E9E9E 0px 3px 8px 0px; */
+    background-color: #FFC400;
+}
+
+h3 {
+    font-size: 2em;
+}
+
+h4 {
+    text-align: center;
+    font-size: 1.5em;
+    padding: 20px;
+    color: white;
+    background-color: #212121;
+}
+
+.color-white {
+    color: white;
+}
+
+.flag {
+    padding: 20px;
+    background-color: white;
+    border: 1px solid;
+}
+
+.color-orange {
+    color: orange;
+}
+
+.info {
+    background-color: #212121;
+    color: white;
+}
+
+.info>p {
+    padding: 5px 10px;
+}
+
+.weather-content>p {
+    padding: 5px 10px;
+}
+
+.weather {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.weather>h4 {
+    width: 100%;
+}
+
+.weather>img {
+    width: 50%;
+    height: unset;
+    padding: 20px;
+}
+
+.weather>div {
+    width: 50%;
+}
+
+#temperature {
+    text-align: center;
+}
+
+.code {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.code p {
+    margin: auto;
+    font-size: 60px;
+}
+
+.app {
+    width: 414px;
+    display: block;
+    margin: auto;
+    text-align: center;
+    padding: 40px 0;
+    overflow: hidden;
+    background-color: #FFC400;
+}
+
+.bar {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 40px;
+}
+
+.bar a {
+    color: #fff;
+    font-size: 20px;
+}
+
+.titlebar {
+    line-height: 0.5rem;
+    color: #fff;
+}
+
+.titlebar h4 {
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 2rem;
+}
+
+.titlebar .description {
+    text-transform: uppercase;
+}
+
+.temperature {
+    background: rgb(206, 206, 206);
+    border-radius: 500px;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    display: block;
+    margin: auto;
+    box-shadow: 0 30px 20px #1d1d1d36;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.temperature img {
+    margin-bottom: -20px;
+}
+
+.temperature p {
+    font-size: 14px;
+}
+
+.temperature h2 {
+    margin: 0;
+    font-size: 60px;
+    font-weight: 300;
+}
+
+.extra {
+    display: flex;
+    justify-content: space-around;
+    color: #fff;
+    padding-bottom: 30px;
+}
+
+.extra .col .info {
+    padding-bottom: 10px;
+}
+
+.dataweather {
+    background-color: #FFC400;
+    padding: 20px;
+    border-radius: 50px;
+    margin-top: 20px;
+    display: block;
+    height: 400px;
+    font-size: 14px;
+    position: relative;
+}
+
+.dataweather .table {
+    display: flex;
+    justify-content: space-around;
+}
+
+.dataweather .table .box {
+    font-size: 14px;
+    border: #D4D4D4 solid 1px;
+    border-radius: 20px;
+    padding: 5px;
+    margin: 5px;
+}
+
+.dataweather .table div i {
+    font-size: 150%;
+    color: #585858;
+}
+
+.dataweather .firm {
+    padding-top: 20px;
+    font-size: 12px;
+}
+
+body {
+    background-image: url('https://www.worldexcellence.com/wp-content/uploads/2019/06/world-excellence-le-fonti.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+.ow-row {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 4%;
+}
+
+.ow-ico {
+    line-height: 1.1em;
+}
+
+.ow-widget {
+    font-family: "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 16px;
+    padding: 2%;
+}
+
+.pull-left {
+    float: left;
+}
+
+.pull-right {
+    float: right;
+}
+
+.ow-city-name {
+    font-size: 24px;
+}
+
+.ow-ico-current {
+    font-size: 80px;
+    width: 1.1em;
+    padding-top: 13px;
+}
+
+.ow-temp-current {
+    font-size: 60px;
+    margin: 0 10%;
+}
+
+.ow-current-desc {
+    line-height: 1.5em;
+}
+
+.ow-forecast-item {
+    float: left;
+    width: calc(25% - 1px);
+    text-align: center;
+    border-right: 1px solid white;
+}
+
+.ow-ico-forecast {
+    font-size: 30px;
+    position: relative;
+    margin: 10px 0;
+}
+
+.ow-forecast-temp span {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.ow-widget {
+    width: 100%;
+    height: 440px;
+    background-color: #FFC400;
+}
